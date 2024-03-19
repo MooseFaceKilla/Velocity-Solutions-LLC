@@ -58,7 +58,7 @@ public class LoginGUI extends JFrame implements ActionListener {
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid username or password!", "Error", JOptionPane.ERROR_MESSAGE);
             }
-        } else if (e.getActionCommand().equals("Sign Up")) {
+        } else if (e.getActionCommand().equals("Sign Up")  && (!username.equals("") && (!password.equals("")))) {
             if (createAccount(username, password)) {
                 JOptionPane.showMessageDialog(this, "Account created successfully!");
             } else {
